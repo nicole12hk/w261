@@ -1,0 +1,68 @@
+Data Feature,Description,Data Type
+STATION,Weather station ID,String
+FL_DATE,Flight date (yyyymmdd),String
+QUARTER,Quarter (1-4),String
+DAY_OF_MONTH,Day of month,String
+DAY_OF_WEEK,Day of week,String
+OP_UNIQUE_CARRIER,Unique Carrier Code,String
+OP_CARRIER_AIRLINE_ID,An identification number assigned by US DOT to identify a unique airline (carrier),String
+OP_CARRIER,Code assigned by IATA and commonly used to identify a carrier,String
+TAIL_NUM,Flight tail number,String
+OP_CARRIER_FL_NUM,Flight number assigned by the operating carrier,String
+ORIGIN_AIRPORT_ID,An identification number assigned by US DOT to identify a unique airport,String
+ORIGIN,Origin airport,String
+ORIGIN_CITY_NAME,"Origin airport, city name",String
+ORIGIN_STATE_ABR,"Origin airport, state code",String
+ORIGIN_STATE_NM,"Origin airport, state name",String
+DEST_AIRPORT_ID,An identification number assigned by US DOT to identify a unique airport.,String
+DEST,Destination airport,String
+DEST_CITY_NAME,"Destination airport, city name",String
+DEST_STATE_ABR,"Destination airport, state code",String
+DEST_STATE_NM,"Destination airport, state name",String
+CRS_DEP_TIME,CRS departure rime (local time: hhmm),String
+DEP_TIME,Actual departure time (local time: hhmm),String
+DEP_DELAY,Difference in minutes between scheduled and actual departure time,Integer
+DEP_DEL15,"Departure delay Indicator, 15 Minutes or More (1=Yes)",Integer
+DEP_DELAY_GROUP,"Departure delay intervals, every (15 minutes from <-15 to >180)",String
+DEP_TIME_BLK,"CRS departure time block, hourly Intervals",String
+TAXI_OUT,The time from departure gate leave to takeoff in minutes,Integer
+TAXI_IN,The time from landing to arrival at the gate in minutes,Integer
+CRS_ARR_TIME,CRS arrival Time (local time: hhmm),String
+ARR_TIME,Actual arrival Time (local time: hhmm),String
+ARR_DELAY,Difference in minutes between scheduled and actual arrival time,Integer
+ARR_DEL15,"Arrival delay indicator, 15 minutes or more (1=Yes)",Integer
+ARR_DELAY_GROUP,"Arrival delay intervals, every (15-minutes from <-15 to >180)",String
+ARR_TIME_BLK,"CRS arrival time block, hourly intervals",String
+CANCELLED,Cancelled flight indicator (1=Yes),String
+CANCELLATION_CODE,Specifies the reason for cancellation,String
+DIVERTED,Diverted flight indicator (1=Yes),String
+CRS_ELAPSED_TIME,CRS elapsed time of flight in minutes,Integer
+ACTUAL_ELAPSED_TIME,Elapsed time of flight in minutes,Integer
+AIR_TIME,Flight time in minutes,Integer
+DISTANCE,Distance between airports in miles,Integer
+DISTANCE_GROUP,"Distance intervals, every 250 miles, for flight segment",String
+CARRIER_DELAY,Carrier delay in minutes,String
+WEATHER_DELAY,Weather delay in minutes,String
+NAS_DELAY,Nation air system delay in munites,String
+SECURITY_DELAY,Security delay in munites,String
+LATE_AIRCRAFT_DELAY,Late aircraft delay in minutes,String
+sched_depart_date_time,Scheduled flight departure in date time format,String
+sched_depart_date_time_UTC,Scheduled flight departure in UTC date time format,String
+four_hours_prior_depart_UTC,4 hours before scheduled flight departure in UTC date time format,String
+two_hours_prior_depart_UTC,2 hours before scheduled flight departure in UTC date time format,String
+HourlyAltimeterSetting,Atmospheric pressure reduced to sea level using temperature profile of the standard atmosphere. Given in inches of Mercury (in Hg),Float
+HourlyDewPointTemperature,Dew point temperature. It is given here in whole degrees Fahrenheit,Float
+HourlyDryBulbTemperature,Dry-bulb temperature and is commonly used as the standard air temperature reported. It is given here in whole degrees Fahrenheit,Float
+HourlyPrecipitation,Total Liquid Content (TLC) which is the water equivalent amount of precipitation for the day (in inches to hundredths). This is all types of precipitation (melted and frozen),Float
+HourlyPresentWeatherType,Weather types describe precipitation or obstructions to vision occurring at the time of observation,String
+HourlyPressureChange,Change in atmospheric pressure,Float
+HourlyPressureTendency,Pressure tendency (In general a 0 through 3 here indicates an increase in pressure over previous 3 hours and a 5 through 8 indicates a decrease over the previous 3 hours and 4 indicates no change during the previous 3 hours,String
+HourlyRelativeHumidity,The relative humidity given to the nearest whole percentage,Float
+HourlySkyConditions,Cloud layer and coverage condition ranked from 0 (clear sky) to 10 (overcast),String
+HourlySeaLevelPressure,Sea level pressure given in inches of mercury (in Hg),Float
+HourlyStationPressure,Atmospheric pressure observed at the station during the time of observation. Given in inches of mercury (in Hg),Float
+HourlyWetBulbTemperature,Wet-bulb temperature given in whole degrees Fahrenheit,Float
+HourlyWindDirection,"Wind direction from true north using compass directions (e.g. 360 = true north, 180 = south, 270 = west, etc.)",String
+HourlyWindGustSpeed,Wind gusts occurring during time of observation. Given in miles per hour (mph),Float
+HourlyWindSpeed,Speed of the wind at the time of observation given in miles per hour (mph),Float
+HourlyVisibility,The horizontal distance an object can be seen and identified given in whole miles,Float
